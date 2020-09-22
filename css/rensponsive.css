@@ -1,0 +1,336 @@
+
+@media(max-width:1024px){
+
+.clients .client1 .img_client1, .clients .client2 .img_client1, .clients .client3 .img_client1, .clients .client9 .img_client1, .clients .client10 .img_client1, .clients .client11 .img_client1 {
+    width: 315px;
+    height: 360px;
+    position: absolute;
+}
+.clients .client1 .img_client1 img,.clients .client2 .img_client1 img,.clients .client3 .img_client1 img,
+.clients .client9 .img_client1 img,.clients .client10 .img_client1 img,.clients .client11 .img_client1 img{
+	max-width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 2s;
+}
+.clients .client1 h3,.clients .client2 h3,.clients .client3 h3,
+.clients .client9 h3,.clients .client10 h3,.clients .client11 h3{
+	position: absolute;
+	margin:120px;
+    transition: 2s;
+    color:#000;
+}
+.clients .client1:hover .img_client1 img{
+	opacity: 1;
+}
+.clients .client1:hover h3{
+	opacity: 0;
+}
+.clients .client2:hover .img_client1 img{
+	opacity: 1;
+}
+.clients .client2:hover h3{
+	opacity: 0;
+}
+.clients .client3:hover .img_client1 img{
+	opacity: 1;
+}
+.clients .client3:hover h3{
+	opacity: 0;
+}
+.clients .client9:hover .img_client1 img{
+	opacity: 1;
+}
+.clients .client9:hover h3{
+	opacity: 0;
+}
+.clients .client10:hover .img_client1 img{
+	opacity: 1;
+}
+.clients .client10:hover h3{
+	opacity: 0;
+}
+.clients .client11:hover .img_client1 img{
+	opacity: 1;
+}
+.clients .client11:hover h3{
+	opacity: 0;
+}
+.clients .client4 .img_client1, .clients .client5 .img_client1, .clients .client12 .img_client1, .clients .client13 .img_client1 {
+width: 475px;
+}
+.clients .client6 .img_client1 {
+width: 635px;
+}
+.clients .client7 .img_client1, .clients .client8 .img_client1 {
+width: 315px;
+}
+.clients .client4 h3, .clients .client5 h3, .clients .client12 h3, .clients .client13 h3 {
+margin: 180px 160px;
+}
+.clients .client1 h3, .clients .client2 h3, .clients .client3 h3, .clients .client9 h3, .clients .client10 h3, .clients .client11 h3 {
+margin: 150px 80px;
+}
+.clients .client7 h3, .clients .client8 h3 {
+margin: 165px 100px;
+}
+}
+
+@media(max-width:834px){
+	.container2 {
+left: 440px;
+}
+.overlay ul li a {
+	font-size: 40px;
+}
+.form_name p {
+font-size: 50px;
+}
+.about p {
+width: 700px;
+}
+.clients .client6 .img_client1 {
+
+width: 475px;
+}
+.clients .client1 .img_client1, .clients .client2 .img_client1, .clients .client3 .img_client1, .clients .client9 .img_client1, .clients .client10 .img_client1, .clients .client11 .img_client1 {
+width: 238px;
+}
+.clients .client4 .img_client1, .clients .client5 .img_client1, .clients .client12 .img_client1, .clients .client13 .img_client1 {
+width: 355px;
+}
+.clients .client7 .img_client1, .clients .client8 .img_client1 {
+width: 232px;
+}
+.clients .client1 h3, .clients .client2 h3, .clients .client3 h3, .clients .client9 h3, .clients .client10 h3, .clients .client11 h3 {
+margin: 130px 45px;
+}
+.clients .client6 h3 {
+margin: 300px 130px;
+}
+.clients .client7 h3, .clients .client8 h3 {
+margin: 165px 70px;
+}
+	}
+@media(max-width:768px){
+	.navBurger {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: #111;
+    box-sizing: border-box;
+    background-clip: content-box;
+    width: 30px;
+    height: 25px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    z-index: 4;
+}
+   .navBurger:before,
+   .navBurger:after {
+        content: "";
+        position: absolute;
+        background: #111;
+        height: 2px;
+        width: 100%;
+        right: 0;
+        will-change: rotate;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+   .navBurger:before {
+        top: -10px;
+        width: 90%;
+    }
+   .navBurger:after {
+        bottom: -10px;
+        width: 80%;
+    }
+   .navBurger.active {
+        background: transparent;
+        background-clip: content-box;
+    }
+   .navBurger.active:before {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        top: 0;
+        background: #eee;
+        width: 110%;
+    }
+   .navBurger.active:after {
+        bottom: 0;
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        background: #eee;
+        width: 110%;
+    }
+
+.overlay {
+    position: fixed;
+    background: rgba(57, 49, 56, 0.8);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform-origin: right top;
+    transform: scale(0);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    z-index: 2;
+    }
+.overlay li {
+    display: block;
+    animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    animation-delay: 0.4s;
+    transform: rotate(-7deg);
+    transform-origin: right bottom;
+        }
+
+.overlay:nth-of-type(2) {
+    animation-delay: 0.5s;
+    }
+.overlay:nth-of-type(3) {
+    animation-delay: 0.6s;
+            }
+.overlay:nth-of-type(4) {
+    animation-delay: 0.7s;
+    }
+.overlay:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+        
+
+.overlayMenu {
+    position: absolute;
+    text-align: right;
+    right: 10vw;
+    top: 10vw;
+}
+   .overlayMenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+     .overlayMenu  ul li {
+            display: block;
+            position: relative;
+            opacity: 0;
+            width: 100%;
+        }
+        .overlayMenu  ul li    a {
+                display: inline-block;
+                
+                color: #fff;
+                text-decoration: none;
+                font-size: 30px;
+                padding: 10px 40px 10px 40px;
+                margin: 5px 0;
+                transition: 0.2s;
+                background: #FFCC52;
+            }
+             .overlayMenu  ul li    a:hover,
+               .overlayMenu  ul li    a:active,
+               .overlayMenu  ul li    a:focus {
+                    transform: translateX(-2px);
+                    padding-left: 80px;
+                    border: 1px solid rgba(255, 255, 255, 1);
+                }
+
+.locked {
+    overflow: hidden;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+    }
+}
+
+
+.container2 {
+left: 250px;
+bottom:0px;
+}
+.overlay {
+    margin-top: 0px;
+}
+
+}
+@media(max-width:500px){
+	.logo p {
+width: 450px;
+font-size: 25px;
+}
+.container2 {
+left: 130px;
+}
+.send .send_but {
+top: 20px;
+left: 160px;
+}
+.logo_ltu .img_logo1 {
+width: 120px;
+margin-top: 100px;
+}
+.service_name {
+border-bottom:none;
+margin-bottom: 10px;
+}
+.service_name p{
+	border-bottom: 1px solid #000;
+	margin-bottom: 0px;
+
+}
+	}
+	@media(max-width:414px){
+		.logo p {
+
+width: 390px;
+font-size: 20px;
+}
+.container2 {
+left: 80px;
+}
+.form_name p {
+font-size: 30px;
+}
+.send .send_but {
+left: 120px;
+}
+.clients .client1,.clients .client2, .clients .client3,.clients .client4,.clients .client5,.clients .client6,
+.clients .client7,.clients .client8,.clients .client9,.clients .client10,.clients .client11,.clients .client12,
+.clients .client13{
+height: 200px;
+
+	}
+.group1 {
+height:900px;
+}
+.group3 {
+
+height: 920px;
+}
+
+}
